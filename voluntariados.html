@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariado - Consulta y Alta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-background"></div>
+            <img class="logo" src="https://placehold.co/79x79" alt="Logo">
+            <nav class="nav">
+                <div class="nav-item">Alta Usuario</div>
+                <div class="nav-item">Voluntarios</div>
+                <div class="nav-item">Inicio</div>
+            </nav>
+            <div class="title">Voluntariado</div>
+        </header>
+
+        <main class="consulta-borrador-container">
+            <h1 class="consulta-borrador-title">Consulta y Borrador de Voluntariados</h1>
+
+            <table class="voluntariados-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Usuario</th>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Se ofrece chica para pasear perro</td>
+                        <td>SER</td>
+                        <td>2025-02-10</td>
+                        <td>Chica responsable para pasear perros en la zona.</td>
+                        <td>Oferta</td>
+                        <td><button class="borrar-button">Borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Voluntario para limpieza</td>
+                        <td>Juan Pérez</td>
+                        <td>2025-03-15</td>
+                        <td>Disponibilidad los fines de semana.</td>
+                        <td>Petición</td>
+                        <td><button class="borrar-button">Borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ayuda en oficina</td>
+                        <td>Ana Gómez</td>
+                        <td>2025-04-01</td>
+                        <td>Ofrece apoyo administrativo.</td>
+                        <td>Oferta</td>
+                        <td><button class="borrar-button">Borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <section class="alta-voluntariado-container">
+            <h2 class="alta-voluntariado-title">Alta de Voluntariado</h2>
+            <form>
+                <div class="input-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" placeholder="Escribe el título">
+                </div>
+
+                <div class="input-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" placeholder="Nombre de usuario">
+                </div>
+
+                <div class="input-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+
+                <div class="input-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" placeholder="Describe la actividad"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                        <option value="peticion">Petición</option>
+                        <option value="oferta">Oferta</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="alta-button">Dar de Alta</button>
+            </form>
+        </section>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
