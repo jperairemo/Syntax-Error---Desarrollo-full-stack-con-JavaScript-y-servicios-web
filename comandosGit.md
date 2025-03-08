@@ -1,4 +1,4 @@
-Prueba de funcionamiento - Joaquin. 
+
 
 Comandos Git:
 
