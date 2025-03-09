@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <div class="title">Voluntariado</div>
+        <nav class="nav">
+            <div class="nav-item"><a href="home.html">Inicio</a></div>
+            <div class="nav-item"><a href="Usuarios.html">Usuario</a></div>
+            <div class="nav-item"><a href="voluntariados.html">Voluntarios</a></div>
+        </nav>
+        <nav class="nav">
+            <div class="nav-item"><a href="inicioSesion.html">Login</a></div>
+            <div class="nav-item"><a href="#">Register</a></div>
+        </nav>
+    </header>
+
+    <main class="consulta-borrador-container">
+      <h1 class="consulta-borrador-title">Consulta y Borrador de Usuarios</h1>
+
+      <table class="voluntariados-table">
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>SER</td>
+                  <td>s@e.r</td>
+                  <td>1234</td>
+                  <td><button class="borrar-button">Borrar</button></td>
+              </tr>
+              <tr>
+                <td>GAM</td>
+                <td>g@a.r</td>
+                <td>4321</td>
+                  <td><button class="borrar-button">Borrar</button></td>
+              </tr>
+          </tbody>
+      </table>
+  </main>
+
+  <section class="alta-voluntariado-container">
+      <h2 class="alta-voluntariado-title">Alta de Usuarios</h2>
+      <form>
+          <div class="input-group">
+              <label for="Nombre">Nombre</label>
+              <input type="text" id="Nombre">
+          </div>
+
+          <div class="input-group">
+              <label for="Email">Email</label>
+              <input type="text" id="Email">
+          </div>
+
+          <div class="input-group">
+              <label for="Password">Password</label>
+              <input id="Password"></input>
+          </div>
+
+          <button type="submit" class="alta-button">Dar de Alta</button>
+      </form>
+  </section>
+  <footer class="footer"></footer>
+</body>
+</html>
+
+
