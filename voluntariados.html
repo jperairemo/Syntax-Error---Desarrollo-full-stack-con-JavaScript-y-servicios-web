@@ -24,7 +24,7 @@
         <main class="consulta-borrador-container">
             <h1 class="consulta-borrador-title">Consulta y Borrador de Voluntariados</h1>
 
-            <table class="voluntariados-table">
+            <table id="tablaVoluntariados" class="table">
                 <thead>
                     <tr>
                         <th>Título</th>
@@ -66,40 +66,43 @@
 
         <section class="alta-voluntariado-container">
             <h2 class="alta-voluntariado-title">Alta de Voluntariado</h2>
-            <form>
+            <form id="formVoluntariado"> <!-- Agregado ID para capturar el evento submit -->
                 <div class="input-group">
                     <label for="titulo">Título</label>
-                    <input type="text" id="titulo" placeholder="Escribe el título">
+                    <input type="text" id="titulo" placeholder="Escribe el título" required>
                 </div>
 
                 <div class="input-group">
                     <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" placeholder="Nombre de usuario">
+                    <input type="text" id="usuario" placeholder="Nombre de usuario" required>
                 </div>
 
                 <div class="input-group">
                     <label for="fecha">Fecha</label>
-                    <input type="date" id="fecha">
+                    <input type="date" id="fecha" required>
                 </div>
 
                 <div class="input-group">
                     <label for="descripcion">Descripción</label>
-                    <textarea id="descripcion" placeholder="Describe la actividad"></textarea>
+                    <textarea id="descripcion" placeholder="Describe la actividad" required></textarea>
                 </div>
 
                 <div class="input-group">
                     <label for="tipo">Tipo</label>
-                    <select id="tipo">
-                        <option value="peticion">Petición</option>
-                        <option value="oferta">Oferta</option>
+                    <select id="tipo" required>
+                        <option value="Petición">Petición</option>
+                        <option value="Oferta">Oferta</option>
                     </select>
                 </div>
 
-                <button type="submit" class="alta-button">Dar de Alta</button>
+                <button type="submit" class="alta-button btn btn-primary">Dar de Alta</button>
             </form>
         </section>
 
         <footer class="footer"></footer>
     </div>
+
+    <!-- Vinculación de voluntariados.js -->
+    <script type="module" src="voluntariados.js"></script>
 </body>
 </html>
