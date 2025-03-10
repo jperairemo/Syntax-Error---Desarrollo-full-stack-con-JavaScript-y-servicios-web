@@ -1,5 +1,4 @@
 
-
 Comandos Git:
 
 git add . -> añade a lista de cambios apra subir a la rama lo que haiga modificado
