@@ -15,6 +15,7 @@ export let voluntariados = [
 
 // Función para agregar un nuevo usuario
 export function agregarUsuario(nombre, correo, password) {
+    const existe = usuarios.some(usuario => usuario.correo === correo);
     // Verificar si el correo ya existe
     if (usuarios.some(u => u.correo === correo)) {
         alert("El correo ya está registrado. Intenta con otro.");
