@@ -12,7 +12,7 @@
         <div class="title">Voluntariado</div>
         <nav class="nav">
             <div class="nav-item"><a href="home.html">Inicio</a></div>
-            <div class="nav-item"><a href="Usuarios.html">Usuario</a></div>
+            <div class="nav-item"><a href="usuarios.html">Usuario</a></div>
             <div class="nav-item"><a href="voluntariados.html">Voluntarios</a></div>
         </nav>
         <nav class="nav">
@@ -28,51 +28,54 @@
           <thead>
               <tr>
                   <th>Nombre</th>
-                  <th>Email</th>
-                  <th>Password</th>
+                  <th>Correo</th>
+                  <th>Contraseña</th> <!-- Se agregó la columna Contraseña -->
                   <th>Acciones</th>
               </tr>
           </thead>
-          <tbody>
+          <tbody id="tablaUsuarios">
               <tr>
                   <td>SER</td>
                   <td>s@e.r</td>
-                  <td>1234</td>
-                  <td><button class="borrar-button">Borrar</button></td>
+                  <td>1234</td>  <!-- Se agregó la contraseña -->
+                  <td><button class="borrar-button btn btn-danger">Borrar</button></td>
               </tr>
               <tr>
-                <td>GAM</td>
-                <td>g@a.r</td>
-                <td>4321</td>
-                  <td><button class="borrar-button">Borrar</button></td>
+                  <td>GAM</td>
+                  <td>g@a.r</td>
+                  <td>4321</td>  <!-- Se agregó la contraseña -->
+                  <td><button class="borrar-button btn btn-danger">Borrar</button></td>
               </tr>
           </tbody>
       </table>
-  </main>
+    </main>
 
-  <section class="alta-voluntariado-container">
-      <h2 class="alta-voluntariado-title">Alta de Usuarios</h2>
-      <form>
-          <div class="input-group">
-              <label for="Nombre">Nombre</label>
-              <input type="text" id="Nombre">
-          </div>
+    <section class="alta-usuario-container">
+        <h2 class="alta-usuario-title">Alta de Usuario</h2>
+        <form id="formUsuario">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+            </div>
 
-          <div class="input-group">
-              <label for="Email">Email</label>
-              <input type="text" id="Email">
-          </div>
+            <div class="input-group">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" required>
+            </div>
 
-          <div class="input-group">
-              <label for="Password">Password</label>
-              <input id="Password"></input>
-          </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+            </div>
 
-          <button type="submit" class="alta-button">Dar de Alta</button>
-      </form>
-  </section>
-  <footer class="footer"></footer>
+            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+        </form>
+    </section>
+
+    <footer class="footer"></footer>
+  </div>
+
+  <!-- Vinculación con usuarios.js -->
+  <script type="module" src="usuarios.js"></script>
 </body>
 </html>
-
-
