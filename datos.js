@@ -1,4 +1,4 @@
-// Contiene los datos de las interfaces según pide el punto 10 del enunciado. Maneja la info de usuarios y voluntarios. 
+// Contiene los datos de las interfaces según el punto 10 del enunciado. Maneja la info de usuarios y voluntarios. 
 
 // Lista de usuarios
 export let usuarios = [
@@ -12,6 +12,26 @@ export let voluntariados = [
     { id: 2, titulo: "Voluntario para limpieza", usuario: "Juan Pérez", fecha: "2025-03-15", descripcion: "Disponibilidad los fines de semana.", tipo: "Petición" },
     { id: 3, titulo: "Ayuda en oficina", usuario: "Ana Gómez", fecha: "2025-04-01", descripcion: "Ofrece apoyo administrativo.", tipo: "Oferta" }
 ];
+
+// Función para agregar un nuevo usuario
+export function agregarUsuario(nombre, correo, password) {
+    // Verificar si el correo ya existe
+    if (usuarios.some(u => u.correo === correo)) {
+        alert("El correo ya está registrado. Intenta con otro.");
+        return false;
+    }
+
+    usuarios.push({ nombre, correo, password });
+    return true;
+}
+
+// Función para eliminar un usuario
+export function eliminarUsuario(correo) {
+    const index = usuarios.findIndex(u => u.correo === correo);
+    if (index !== -1) {
+        usuarios.splice(index, 1); // Eliminar el usuario del array
+    }
+}
 
 // Función para agregar un nuevo voluntariado
 export function agregarVoluntariado(titulo, usuario, fecha, descripcion, tipo) {
