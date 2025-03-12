@@ -455,9 +455,9 @@ body {
 .tabla-usuarios {
     width: 200%;                
     max-width: 1000px;          
-    margin: 40px auto 80px;
+    margin: 0px auto 80px;
     border-collapse: separate;
-    border-spacing: 0 15px;    
+    border-spacing: 20 30px;    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;       
@@ -548,5 +548,5 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Esto centra el contenido hijo horizontalmente */
+    align-items: center; 
 }
