@@ -52,3 +52,8 @@ export function eliminarVoluntariado(id) {
 export function obtenerVoluntariados() {
     return voluntariados; 
 }
+
+// 🟢 Función para validar si un usuario existe y su contraseña es correcta
+export function validarUsuario(correo, password) {
+    return usuarios.find(usuario => usuario.correo === correo && usuario.password === password) || null;
+}
