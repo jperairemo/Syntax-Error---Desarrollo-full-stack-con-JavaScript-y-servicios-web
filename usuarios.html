@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">Voluntariado</div>
+            <nav class="nav">
+                <div class="nav-item"><a href="home.html">Inicio</a></div>
+                <div class="nav-item"><a href="usuarios.html">Usuario</a></div>
+                <div class="nav-item"><a href="voluntariados.html">Voluntarios</a></div>
+            </nav>
+            <nav class="nav">
+                <div class="nav-item" id="navUsuario"><a href="inicioSesion.html">Login</a></div> <!-- Se agregó el ID -->
+                <div class="nav-item"><a href="#">Register</a></div>
+            </nav>
+        </header>
+
+        <main class="consulta-borrador-container">
+            <h1 class="consulta-borrador-title">Consulta y Borrador de Usuarios</h1>
+
+            <table class="tabla-usuarios">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaUsuarios">
+                    <tr>
+                        <td>SER</td>
+                        <td>s@e.r</td>
+                        <td>1234</td>
+                        <td><button class="borrar-button btn btn-danger">Borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>GAM</td>
+                        <td>g@a.r</td>
+                        <td>4321</td>
+                        <td><button class="borrar-button btn btn-danger">Borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <section class="form-usuario">
+            <h2 class="alta-usuario-title">Alta de Usuario</h2>
+            <form id="formUsuario">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Agregar Usuario</button>
+            </form>
+        </section>
+
+        <footer class="footer"></footer>
+    </div>
+
+    <!-- Vinculación con usuarios.js -->
+    <script type="module" src="usuarios.js"></script>
+
+    <!-- Vinculación con menu.js -->
+    <script type="module" src="menu.js"></script>
+
+</body>
+</html>

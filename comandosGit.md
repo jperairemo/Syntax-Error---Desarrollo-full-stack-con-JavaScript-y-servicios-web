@@ -1,4 +1,3 @@
-Prueba de funcionamiento - joquin. 
 
 Comandos Git:
 
@@ -13,4 +12,4 @@ git pull -> actualiza rama a local
 
 git merge <rama> -> pasa de la rama main lo que haya a la mía
 
-git status -> indica como está
+git status -> indica como está/

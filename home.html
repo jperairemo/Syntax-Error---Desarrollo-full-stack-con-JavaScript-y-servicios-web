@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">Voluntariado</div>
+            <nav class="nav">
+                <div class="nav-item"><a href="home.html">Inicio</a></div>
+                <div class="nav-item"><a href="usuarios.html">Usuario</a></div>
+                <div class="nav-item"><a href="voluntariados.html">Voluntarios</a></div>
+            </nav>
+            <nav class="nav">
+                <div class="nav-item" id="navUsuario"><a href="inicioSesion.html">Login</a></div> <!-- Se agregó el ID -->
+                <div class="nav-item"><a href="#">Register</a></div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1 class="dashboard-title">DASHBOARD DE VOLUNTARIADO SOBRE MASCOTAS</h1>
+
+            <section class="about-us">
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit sapien tempor viverra vitae...
+                </p>
+            </section>
+
+            <section class="volunteering-types">
+                <h2>Tipos de Voluntariado</h2>
+                <div id="voluntariadosContainer" class="volunteering-cards">
+                    <!-- Se llenará dinámicamente con home.js -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+
+    <!-- Importar el script para la carga dinámica -->
+    <script type="module" src="home.js"></script>     
+
+    <!-- Vinculación con menu.js -->
+    <script type="module" src="menu.js"></script>
+
+</body>
+</html>
