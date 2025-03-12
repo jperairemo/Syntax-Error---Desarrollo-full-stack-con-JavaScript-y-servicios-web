@@ -47,3 +47,8 @@ export function eliminarVoluntariado(id) {
         voluntariados.splice(index, 1);  // Eliminar el elemento
     }
 }
+
+// Función para obtener voluntariados
+export function obtenerVoluntariados() {
+    return voluntariados; 
+}

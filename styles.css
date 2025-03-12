@@ -100,35 +100,13 @@ body {
     margin-top: 30px;
 }
 
-.card {
-    width: 430px;
-    height: 588px;
-    background: #B4B4B4;
-    border-radius: 15px;
-    border: 3px solid black;
-    text-align: center;
-    padding: 20px;
-}
-
-.card-image {
-    width: 391px;
-    height: 237px;
-    background: #D9D9D9;
-    border: 3px solid black;
-    margin: auto;
-}
-
 .card h3 {
     font-size: 50px;
     font-weight: 400;
     color: black;
 }
 
-.card p {
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-}
+
 
 .footer {
     width: 100%;
@@ -283,39 +261,58 @@ body {
 }
 
 /* Tarjetas de voluntariado */
+/* Ajustar el diseño de la tarjeta */
 .card {
     width: 430px;
-    height: 588px;
+    height: auto; /* Se ajustará al contenido */
     background: #B4B4B4;
     border-radius: 15px;
     border: 3px solid black;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-/* Imagen dentro de la tarjeta */
 .card-image {
-    width: 391px;
-    height: 237px;
-    background: #D9D9D9;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
     border: 3px solid black;
-    margin: auto;
+    margin-bottom: 15px;
 }
 
-/* Título dentro de la tarjeta */
-.card h3 {
-    font-size: 50px;
-    font-weight: 400;
-    color: black;
+/* Fondo con color según tipo */
+.card-oferta .card-image {
+    background: linear-gradient(135deg, #a8e6cf, #d4edda);
 }
 
-/* Texto dentro de la tarjeta */
+.card-peticion .card-image {
+    background: linear-gradient(135deg, #ffaaa5, #f8d7da);
+}
+
+
+/* Ajuste para evitar que el texto salga del cuadro */
 .card p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: black;
+    margin: 10px 0;
+    word-wrap: break-word; /* Asegura que el texto no se desborde */
+    padding: 0 10px; /* Agrega espacio lateral para evitar que el texto pegue al borde */
 }
 
+/* El tipo de voluntariado ahora se verá dentro de la tarjeta */
+.tipo {
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5); /* Ligero fondo blanco para resaltar */
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 16px;
+}
 
 /* Contenedor del apartado de consulta y borrador */
 .consulta-borrador-container {
