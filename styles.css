@@ -16,7 +16,7 @@ body {
 
 /* ---------------MENU----------------- */
 .header {
-    width: 111%;
+    width: 100%;
     height: 121px;
     background: #dbbdbb;
     display: flex;
@@ -591,3 +591,55 @@ body {
     border-top: 1px solid black;
     margin-top: 50px;
 }
+
+/*-------------------BOTÓN DAR DE ALTA--------------------*/
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efecto al pasar el mouse */
+  .btn:hover {
+    background-color: #dc3545; /* Cambia el color al hacer hover */
+    transform: scale(1.05); /* Hace el botón un poco más grande */
+  }
+
+/*-------------------BOTÓN CONSULTA Y BORRADOR DE USUARIOS---------------------*/
+
+  /* Estilo base del botón borrar */
+.borrar-button {
+    background-color: #dc3545; /* Un rojo tipo botón de borrar */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    /* Transiciones suaves para color y escala */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efecto al hacer hover */
+  .borrar-button:hover {
+    background-color: #c82333; /* Un rojo un poco más oscuro */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  }
+
+  /*---------------------------BOTÓN AGREGAR USUARIO----------------------*/
+  /* Estilo base del botón submit */
+.btn-submit {
+    background-color: #c82333; /* Verde típico para "Agregar" o "Aceptar" */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    /* Transiciones suaves para el color y la escala */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efecto al hacer hover */
+  .btn-submit:hover {
+    background-color: #c82333; /* Verde un poco más oscuro */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+  }
