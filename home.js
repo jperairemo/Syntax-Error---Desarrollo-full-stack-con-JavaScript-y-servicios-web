@@ -1,5 +1,28 @@
 import { obtenerVoluntariados } from './datos.js';
 
+const voluntariados = [
+    {
+        titulo: "Ayuda con paseo de perro en horarios específicos",
+        usuario: "Pedro",
+        fecha: "2025-02-10",
+        descripcion: "Mi jornada laboral me impide dedicar el tiempo necesario para pasear a mi perro.",
+        tipo: "Oferta"
+    },
+    {
+        titulo: "Se ofrece mujer jubilada para pasear perros",
+        usuario: "María",
+        fecha: "2025-03-15",
+        descripcion: "Mujer jubilada amante de los animales desea pasear perros para mantenerse activa y disfrutar de su compañía. Disponibilidad total.",
+        tipo: "Petición"
+    },
+    {
+        titulo: "Ayuda y atención con mi perro",
+        usuario: "Anya",
+        fecha: "2025-04-01",
+        descripcion: "Estoy en plena mudanza y con los compromisos profesionales o viajes, no tengo tiempo para pasear a mi perro.",
+        tipo: "Oferta"
+    }
+];
 // Función para mostrar dinámicamente las tarjetas de voluntariados
 function mostrarVoluntariados() {
     let container = document.getElementById("voluntariadosContainer");
