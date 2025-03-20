@@ -2,7 +2,7 @@ import { voluntariados, agregarVoluntariado, eliminarVoluntariado } from './dato
 
 // Función para mostrar los voluntariados en la tabla
 function mostrarVoluntariados() {
-    let tabla = document.getElementById("tablaVoluntariados").getElementsByTagName("tbody")[0];
+    let tabla = document.getElementById("voluntariados-table").getElementsByTagName("tbody")[0];
     tabla.innerHTML = ""; // Limpiar la tabla antes de mostrar los datos
 
     voluntariados.forEach((v) => {
