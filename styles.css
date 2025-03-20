@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    font-family: Montserrat, sans-serif;
+    /* font-family: Montserrat, sans-serif; */
     background: rgb(241, 233, 233);
     /* background-color: blue; */
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .container {
